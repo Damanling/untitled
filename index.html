@@ -79,6 +79,35 @@
                     <input type="tel" name="phone" id="phone" pattern="[0-9+]{10,}" title="Формат: +7... или 10 цифр" required>
                 </div>
                 <div class="form-field">
+                <label for="birthday">Дата рождения:</label>
+                <input type="date" name="birthday" id="birthday" max="2008-09-23" required /><br />
+                </div>
+                <div class="form-field">
+                <fieldset>
+                    <label for="languages">Пол:</label><br />
+                        <input type="radio" name="gender" id="male" value="male" required />
+                        <label for="male">Мужской</label>
+                        <input type="radio" name="gender" id="female" value="female" />
+                        <label for="female">Женский</label>
+                </fieldset>
+                </div>
+                <div class="form-field">
+                <label for="languages">Любимый язык программирования:</label>
+                <select multiple name="languages" id="languages" required>
+                    <option>Pascal</option>
+                    <option>C</option>
+                    <option>C++</option>
+                    <option>JavaScript</option>
+                    <option>PHP</option>
+                    <option>Python</option>
+                    <option>Java</option>
+                    <option>Haskell</option>
+                    <option>Clojure</option>
+                    <option>Prolog</option>
+                    <option>Scala</option>
+                </select><br />
+                </div>
+                <div class="form-field">
                     <label for="message">Сообщение</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
                 </div>
